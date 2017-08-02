@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
 
-mkdir -p ~/Library/Developer/Xcode/UserData/FontAndColorThemes/
-cp *.dvtcolortheme ~/Library/Developer/Xcode/UserData/FontAndColorThemes/
+sourceDir="$(pwd)"/FontAndColorThemes/
+targetDir=~/Library/Developer/Xcode/UserData/FontAndColorThemes
+
+ln -s $sourceDir $targetDir
